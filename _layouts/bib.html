@@ -62,10 +62,10 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            <em>{{author.first}} {{author.last}}</em>
+            <em><b>{{author.first}} {{author.last}}</b></em>
           {%- else -%}
             {%- if coauthor_url -%}
-              <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
+              <a style="text-decoration: none;" href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
             {%- else -%}
               {{author.first}} {{author.last}}
             {%- endif -%}
@@ -183,6 +183,9 @@
           {%- endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+          {%- endif %}
+          {%- if entry.springer %}
+            <a href="{{ entry.springer }}" class="btn btn-sm z-depth-0" role="button">Springer</a>
           {%- endif %}
           </div>
           {% if site.badges %}

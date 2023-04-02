@@ -1,34 +1,23 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Manshaei":
+  - firstname: ["Mohammad Hossein", "MH"]
+    url: https://scholar.google.com/citations?user=33d716cAAAAJ
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Krunz":
+  - firstname: ["Marwan", "M"]
+    url: https://scholar.google.com/citations?user=aEEPrV4AAAAJ
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Mohebbi Moghaddam":
+  - fristname: ["Monireh", "M.", "Monireh Mohebbi", "Mohebbi"]
+    url: https://scholar.google.com/citations?user=D6SAK9wAAAAJ
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Moghaddam":
+  - fristname: ["Monireh", "M.", "Monireh Mohebbi", "Mohebbi Monireh", "Mohebbi"]
+    url: https://scholar.google.com/citations?user=D6SAK9wAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Farnia":
+  - firstname: ["Farzan", "F."]
+    url: https://www.cse.cuhk.edu.hk/people/faculty/farzan-farnia/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Li":
+  - firstname: ["Cheuk Ting", "Cheuk"]
+    url: https://www.ie.cuhk.edu.hk/people/ctli.shtml
