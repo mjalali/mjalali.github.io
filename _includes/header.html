@@ -23,7 +23,7 @@
           {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
           <div class="navbar-brand social">
-            {% include social.html %}
+            {% include abs_social.html %}
           </div>
           {% endif %}
           <!-- Navbar Toggle -->
@@ -95,6 +95,13 @@
               {%- endif -%}
               {% endfor -%}
               {%- if site.enable_darkmode %}
+
+              <!-- CV -->
+			  <li id="show-cv" class="nav-item">
+				  <a class="nav-link" target="_blank" href="{{ '/assets/pdf/cv_academic_april.pdf' | prepend: site.baseurl | prepend: site.url }}">
+					CV
+				  </a>
+			  </li>
 
               <!-- Toogle theme mode -->
               <li class="toggle-container">
