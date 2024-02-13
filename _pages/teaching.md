@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-## GitHub Repositories
+### Teaching assistant at Isfahan University of Technology
 
 This repository contains the homework and projects I developed during my tenure as a teaching assistant at the IUT. Please feel free to peruse through the repository and reach out to me in case you require any clarifications.
 
