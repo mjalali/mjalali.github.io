@@ -2,11 +2,19 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Materials for courses I taught during my bachelors at the Isfahan University of Technology!
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## GitHub Repositories
 
-Organize your courses by years, topics, or universities, however you like!
+This repository contains the homework and projects I developed during my tenure as a teaching assistant at the IUT. Please feel free to peruse through the repository and reach out to me in case you require any clarifications.
+
+{% if site.data.repositories.teaching_repos %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.teaching_repos %}
+    {% include repository/repo.html repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}

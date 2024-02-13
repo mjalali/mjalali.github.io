@@ -1,37 +1,30 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@Article{Jalali2023,
-  author={Mohammad Jalali and Cheuk Ting Li and Farzan Farnia},
-  title={On the Evaluation of Generative Models},
-  year={2023},
+@Article{Jalali2024rank,
+  author={Mohammad Jalali and Ramin Javadi},
+  title={Maximizing Rank Agreement Under Noisy Comparisons},
+  year={2024},
   journal={Under Review},
-  selected={true},
+  abstract={In this paper, we investigate the problem of ranking with maximum agreement under noisy comparisons. The input is a collection of pairwise comparisons between the elements of a ground set derived from a hidden embedded ranking which are exposed to an external noise and so may have inconsistencies. The goal is to reconstruct the ground truth with minimum error or maximize the number of satisfied comparisons. We propose three algorithms called In-Degree, PageRank, and Hybrid for solving this problem. We analyze our algorithms under a stochastic model which is a refinement of Erd\H{o}s-R\'{e}nyi model and each pairwise comparison is revealed independently with probability $p$ and each revealed comparison is reversed with probability $\epsilon$ (noise rate). For the In-degree algorithm, we give a theoretical bound for the error rate of the obtained ranking in comparison with the ground truth. In particular we prove that when $n$ is the number of items and $p=\alpha \ln n /n$, for some constant $\alpha$, then the error rate is at most $O({\alpha}^{-1/3}{(1-\epsilon)^{2/3}}/(1-2\epsilon))$. We also compare the performance of our algorithms with previous known methods in several experiments with synthetic and real data.},
+  selected={false},
   abbr={Under Rev.},
+}
+
+@inproceedings{Jalali2023rke,
+  author={Mohammad Jalali and Cheuk Ting Li and Farzan Farnia},
+  title={An Information-Theoretic Evaluation of Generative Models in Learning Multi-modal Distributions},
+  year={2023},
+  booktitle={37th conference on Neural Information Processing Systems (NeurIPS)},
+  abstract={The evaluation of generative models has received significant attention in the machine learning community. When applied to a multi-modal distribution which is common among image datasets, an intuitive evaluation criterion is the number of modes captured by the generative model. While several scores have been proposed to evaluate the quality and diversity of a model's generated data, the correspondence between existing scores and the number of modes in the distribution is unclear. In this work, we propose an information-theoretic diversity evaluation method for multi-modal underlying distributions. We utilize the R'enyi Kernel Entropy (RKE) as an evaluation score based on quantum information theory to measure the number of modes in generated samples. To interpret the proposed evaluation method, we show that the RKE score can output the number of modes of a mixture of sub-Gaussian components. We also prove estimation error bounds for estimating the RKE score from limited data, suggesting a fast convergence of the empirical RKE score to the score for the underlying data distribution. Utilizing the RKE score, we conduct an extensive evaluation of state-of-the-art generative models over standard image datasets. The numerical results indicate that while the recent algorithms for training generative models manage to improve the mode-based diversity over the earlier architectures, they remain incapable of capturing the full diversity of real data. Our empirical results provide a ranking of widely-used generative models based on the RKE score of their generated samples.},
+  selected={true},
+  url={https://openreview.net/forum?id=PdZhf6PiAb},
+  pdf={https://openreview.net/pdf?id=PdZhf6PiAb},
+  supp={https://openreview.net/attachment?id=PdZhf6PiAb&name=supplementary_material},
+  code={https://github.com/mjalali/renyi-kernel-entropy},
+  poster={NeurIPS23Poster_rke.pdf},
+  bibtex_show={true},
+  abbr={NeurIPS 2023},
   preview={evaluation.png},
 }
 
@@ -53,13 +46,10 @@
   doi={10.1007/s10462-023-10395-6},
   url={https://doi.org/10.1007/s10462-023-10395-6},
   selected={true},
-  springer={https://link.springer.com/article/10.1007/s10462-023-10395-6},
   bibtex_show={true},
-  pdf={games-of-gans-springer.pdf},
+  pdf={https://arxiv.org/pdf/2106.06976.pdf},
   abbr={Artif Intell Rev},
   preview={game-of-gans.png},
-  altmetric={ture},
-  dimensions={true},
 }
 
 @article{MohebbiMoghaddamArXiv2021,
@@ -81,42 +71,4 @@
   abbr={arXiv},
   arxiv={2106.06976},
   preview={game-of-gans.png},
-  altmetric={ture},
-  dimensions={true},
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
 }
