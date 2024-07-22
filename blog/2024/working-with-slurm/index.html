@@ -10,10 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>sample-posts | Mohammad  Jalali</title>
+    <title>Tips to use with Slurm and remote server! | Mohammad  Jalali</title>
     <meta name="author" content="Mohammad  Jalali">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="This is my experience with working remote servers in the CSE department at the Chinese University of Hong Kong (CUHK).">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -34,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mjalali.github.io/blog/category/sample-posts/">
+    <link rel="canonical" href="https://mjalali.github.io/blog/2024/working-with-slurm/">
     
     <!-- Dark Mode -->
     
@@ -71,16 +70,11 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/">about</a>
               </li>
-<!--              -->
-<!--              &lt;!&ndash; Blog &ndash;&gt;-->
-<!--              <li class="nav-item active">-->
-<!--                <a class="nav-link" href="/blog/">blog-->
-<!---->
-<!--                  <span class="sr-only">(current)</span>-->
-<!---->
-<!--                </a>-->
-<!--              </li>-->
-<!---->
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog<span class="sr-only">(current)</span></a>
+              </li>
 
               <!-- Other pages -->
               <li class="nav-item ">
@@ -125,76 +119,92 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <div class="post">
+      <!-- _layouts/post.html -->
+
+<div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-tag fa-sm"></i> sample-posts </h1>
-    <p class="post-description"> an archive of posts in this category </p>
+    <h1 class="post-title">Tips to use with Slurm and remote server!</h1>
+    <p class="post-meta">July 20, 2024</p>
+    <p class="post-tags">
+      <a href="/blog/2024"> <i class="fas fa-calendar fa-sm"></i> 2024 </a>
+        ·  
+        <a href="/blog/tag/cuhk">
+          <i class="fas fa-hashtag fa-sm"></i> CUHK</a>  
+          <a href="/blog/tag/remote-server">
+          <i class="fas fa-hashtag fa-sm"></i> remote-server</a>  
+          <a href="/blog/tag/slurm">
+          <i class="fas fa-hashtag fa-sm"></i> slurm</a>  
+          
+        ·  
+        <a href="/blog/category/tips">
+          <i class="fas fa-tag fa-sm"></i> tips</a>  
+          
+
+    </p>
   </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Dec 10, 2022</th>
-          <td>
-              <a class="post-link" href="/blog/2022/giscus-comments/">a post with giscus comments</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Sep 28, 2020</th>
-          <td>
-              <a class="post-link" href="/blog/2020/github-metadata/">a post with github metadata</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Sep 28, 2020</th>
-          <td>
-              <a class="post-link" href="/blog/2020/twitter/">a post with twitter</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Oct 20, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/disqus-comments/">a post with disqus comments</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Oct 20, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/math/">a post with math</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Jul 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/code/">a post with code</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">May 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/images/">a post with images</a>
-          </td>
-        </tr>
-      
-        <tr>
-          <th scope="row">Mar 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/formatting-and-links/">a post with formatting and links</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
+  <article class="post-content">
+    <h3 id="outlines">Outlines:</h3>
+<ul>
+    <li>Adding your Public Key to the server</li>
+    <li>Adding essential variables to ~/.bashrc</li>
+    <li>Installing conda on Big data storage</li>
+    <li>Changing the vscode installing path for extensions</li>
+    <li>Scheduling a job with tmux and slurm</li>
+</ul>
+
+<h3 id="adding-your-public-key-to-the-server">Adding your Public Key to the server</h3>
+<p>If you don’t want to enter your password each time you connect to the server you can do the following steps:
+follow <a href="https://linuxhandbook.com/add-ssh-public-key-to-server/" rel="external nofollow noopener" target="_blank">this link</a>.
+(linux9 is an example)</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen <span class="nt">-t</span> rsa
+ssh-copy-id <span class="nt">-i</span> ~/.ssh/id_rsa.pub &lt;user_name&gt;@linux9
+</code></pre></div></div>
+<h3 id="adding-essential-variables-to-bashrc">Adding essential variables to ~/.bashrc</h3>
+<p>You can add these variables to <code class="language-plaintext highlighter-rouge">~/.bashrc</code> to prevent exceeding the memory limit.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Torch and Python</span>
+<span class="nb">export </span><span class="nv">TORCH_HOME</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
+<span class="nb">export </span><span class="nv">PIP_CACHE_DIR</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
+<span class="nb">export </span><span class="nv">PYTHONUSERBASE</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/python
+<span class="nb">export </span><span class="nv">XDG_CACHE_HOME</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
+
+<span class="c"># Slurm Confs</span>
+<span class="nb">export </span><span class="nv">SLURM_CONF</span><span class="o">=</span>/opt1/slurm/gpu-slurm.conf
+</code></pre></div></div>
+<h3 id="installing-conda-on-big-data-storage">Installing conda on Big data storage</h3>
+<p>You need to install conda in order to work with different python versions on the server and the <code class="language-plaintext highlighter-rouge">~</code> directory space
+is limited. You can follow <a href="https://docs.anaconda.com/miniconda/" rel="external nofollow noopener" target="_blank">this link</a></p>
+<ol>
+  <li>go to your big data storage directory (sth like <code class="language-plaintext highlighter-rouge">/research/d2/.../&lt;user_name&gt;</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">mkdir -p /research/.../&lt;user_name&gt;/miniconda3</code></li>
+  <li><code class="language-plaintext highlighter-rouge">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /research/.../&lt;user_name&gt;/miniconda3/miniconda.sh</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bash /research/.../&lt;user_name&gt;/miniconda3/miniconda.sh</code></li>
+  <li><code class="language-plaintext highlighter-rouge">rm -rf /research/.../&lt;user_name&gt;/miniconda3/miniconda.sh</code></li>
+  <li><code class="language-plaintext highlighter-rouge">./miniconda3/bin/conda init bash</code></li>
+</ol>
+
+<h3 id="changing-the-vscode-installing-path-for-extensions">Changing the vscode installing path for extensions</h3>
+<p>Due to the limited space in the home directory, if you want to install some VS code extensions, you need to change
+the installing path.
+You can see <a href="https://stackoverflow.com/questions/71063547/change-default-extensions-location-for-remote-development-in-vs-code" rel="external nofollow noopener" target="_blank">this link</a> for more information or just follow these steps:</p>
+<ol>
+  <li>Go to the settings</li>
+  <li>Search <code class="language-plaintext highlighter-rouge">Remote.SSH: Server Install Path</code> in the settings.</li>
+  <li>add the name of the server as the <code class="language-plaintext highlighter-rouge">key</code> and <code class="language-plaintext highlighter-rouge">/research/d2/rshr/&lt;user_name&gt;/</code> as the path. (For example)</li>
+</ol>
+
+<h3 id="scheduling-a-job-with-tmux-and-slurm">Scheduling a job with tmux and slurm</h3>
+<ol>
+  <li>First make a tmux session</li>
+  <li>Allocate the gpu using slurm commands. (Follow <a href="https://i.cse.cuhk.edu.hk/technical/gpgpu-hpc-service/slurm/" rel="external nofollow noopener" target="_blank">this link</a>)</li>
+  <li>Run your code!</li>
+  <li>Detach from tmux using (cntrl + b + d)</li>
+  <li>You can attach again using <code class="language-plaintext highlighter-rouge">tmux a</code> command.</li>
+</ol>
+
   </article>
+
 
 </div>
 
