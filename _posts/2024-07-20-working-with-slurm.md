@@ -26,12 +26,13 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub <user_name>@linux9
 ```
 ### Adding essential variables to ~/.bashrc
 You can add these variables to `~/.bashrc` to prevent exceeding the memory limit. 
+**Note**: Remember to change <user_name> to your username!
 ```shell
 # Torch and Python
-export TORCH_HOME=/research/d2/rshr/mohammad/.cache/
-export PIP_CACHE_DIR=/research/d2/rshr/mohammad/.cache/
-export PYTHONUSERBASE=/research/d2/rshr/mohammad/.cache/python
-export XDG_CACHE_HOME=/research/d2/rshr/mohammad/.cache/
+export TORCH_HOME=/research/.../<user_name>/.cache/
+export PIP_CACHE_DIR=/research/.../<user_name>/.cache/
+export PYTHONUSERBASE=/research/.../<user_name>/.cache/python
+export XDG_CACHE_HOME=/research/.../<user_name>/.cache/
 
 # Slurm Confs
 export SLURM_CONF=/opt1/slurm/gpu-slurm.conf
@@ -60,3 +61,6 @@ You can see [this link](https://stackoverflow.com/questions/71063547/change-defa
 3. Run your code!
 4. Detach from tmux using (cntrl + b + d)
 5. You can attach again using `tmux a` command.
+
+
+**If you had any question, you can just contact me!**
