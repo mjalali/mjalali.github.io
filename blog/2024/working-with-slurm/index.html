@@ -162,12 +162,13 @@ follow <a href="https://linuxhandbook.com/add-ssh-public-key-to-server/" rel="ex
 ssh-copy-id <span class="nt">-i</span> ~/.ssh/id_rsa.pub &lt;user_name&gt;@linux9
 </code></pre></div></div>
 <h3 id="adding-essential-variables-to-bashrc">Adding essential variables to ~/.bashrc</h3>
-<p>You can add these variables to <code class="language-plaintext highlighter-rouge">~/.bashrc</code> to prevent exceeding the memory limit.</p>
+<p>You can add these variables to <code class="language-plaintext highlighter-rouge">~/.bashrc</code> to prevent exceeding the memory limit. 
+<strong>Note</strong>: Remember to change <user_name> to your username!</user_name></p>
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Torch and Python</span>
-<span class="nb">export </span><span class="nv">TORCH_HOME</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
-<span class="nb">export </span><span class="nv">PIP_CACHE_DIR</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
-<span class="nb">export </span><span class="nv">PYTHONUSERBASE</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/python
-<span class="nb">export </span><span class="nv">XDG_CACHE_HOME</span><span class="o">=</span>/research/d2/rshr/mohammad/.cache/
+<span class="nb">export </span><span class="nv">TORCH_HOME</span><span class="o">=</span>/research/.../&lt;user_name&gt;/.cache/
+<span class="nb">export </span><span class="nv">PIP_CACHE_DIR</span><span class="o">=</span>/research/.../&lt;user_name&gt;/.cache/
+<span class="nb">export </span><span class="nv">PYTHONUSERBASE</span><span class="o">=</span>/research/.../&lt;user_name&gt;/.cache/python
+<span class="nb">export </span><span class="nv">XDG_CACHE_HOME</span><span class="o">=</span>/research/.../&lt;user_name&gt;/.cache/
 
 <span class="c"># Slurm Confs</span>
 <span class="nb">export </span><span class="nv">SLURM_CONF</span><span class="o">=</span>/opt1/slurm/gpu-slurm.conf
@@ -202,6 +203,8 @@ You can see <a href="https://stackoverflow.com/questions/71063547/change-default
   <li>Detach from tmux using (cntrl + b + d)</li>
   <li>You can attach again using <code class="language-plaintext highlighter-rouge">tmux a</code> command.</li>
 </ol>
+
+<p><strong>If you had any question, you can just contact me!</strong></p>
 
   </article>
 
